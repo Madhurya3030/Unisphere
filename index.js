@@ -1,15 +1,8 @@
-// Uni_Backend/index.js
-const express = require('express');
-const mongoose = require('mongoose');
-const userRoutes = require('./routes/userRoutes');
+import { registerRootComponent } from 'expo';
 
-const app = express();
-app.use(express.json());
-app.use('/users', userRoutes);
+import App from './App';
 
-mongoose.connect('mongodb://127.0.0.1:27017/unisphere', {
-  useNewUrlParser: true,
-  useUnifiedTopology: true,
-});
-
-app.listen(3000, () => console.log('Server running on port 3000'));
+// registerRootComponent calls AppRegistry.registerComponent('main', () => App);
+// It also ensures that whether you load the app in Expo Go or in a native build,
+// the environment is set up appropriately
+registerRootComponent(App);

@@ -1,22 +1,52 @@
 {
-  "name": "uni_backend",
-  "version": "1.0.0",
-  "description": "",
-  "license": "ISC",
-  "author": "",
-  "type": "commonjs",
+  "license": "0BSD",
   "main": "index.js",
   "scripts": {
-    "start": "nodemon app.js"
+    "start": "expo start",
+    "android": "expo start --android",
+    "ios": "expo start --ios",
+    "web": "expo start --web"
   },
   "dependencies": {
+    "@expo/vector-icons": "^14.0.2",
+    "@react-native-async-storage/async-storage": "1.23.1",
+    "@react-native-community/datetimepicker": "8.2.0",
+    "@react-native-picker/picker": "2.9.0",
+    "@react-navigation/drawer": "*",
+    "@react-navigation/native": "*",
+    "@react-navigation/native-stack": "*",
+    "@react-navigation/stack": "*",
+    "axios": "*",
     "bcryptjs": "^3.0.0",
-    "body-parser": "^1.20.3",
-    "cors": "^2.8.5",
-    "dotenv": "^16.4.7",
+    "expo": "~52.0.35",
+    "expo-av": "~15.0.2",
+    "expo-constants": "~17.0.5",
+    "expo-document-picker": "~13.0.3",
+    "expo-image-picker": "~16.0.6",
+    "expo-linear-gradient": "~14.0.2",
+    "expo-linking": "~7.0.5",
+    "expo-location": "~18.0.6",
+    "expo-status-bar": "~2.0.1",
     "express": "^4.21.2",
     "jsonwebtoken": "^9.0.2",
-    "mongoose": "^8.10.1",
-    "nodemon": "^3.1.9"
-  }
+    "react": "18.3.1",
+    "react-native": "0.76.7",
+    "react-native-chart-kit": "*",
+    "react-native-feather": "*",
+    "react-native-gesture-handler": "~2.20.2",
+    "react-native-linear-gradient": "*",
+    "react-native-maps": "1.18.0",
+    "react-native-maps-directions": "*",
+    "react-native-paper": "4.9.2",
+    "react-native-reanimated": "~3.16.1",
+    "react-native-safe-area-context": "4.12.0",
+    "react-native-screens": "~4.4.0",
+    "react-native-snap-carousel": "*",
+    "react-native-svg": "15.8.0",
+    "react-native-webview": "13.12.5"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.20.0"
+  },
+  "private": true
 }
