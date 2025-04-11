@@ -48,7 +48,7 @@ const MapViewScreen = ({ userId }) => {
   const fetchRoute = async (originLat, originLng) => {
     if (!originLat || !originLng || !destination) return;
     
-    const apiKey = 'AIzaSyBfsSnL1d8WVx1fijrpDZz_u1yDJt3dhNo'; // Replace with your API key
+    const apiKey = ''; // Replace with your API key
     const origin = `${originLat},${originLng}`;
     const dest = `${destination.latitude},${destination.longitude}`;
     const url = `https://maps.googleapis.com/maps/api/directions/json?origin=${origin}&destination=${dest}&key=${apiKey}`;
